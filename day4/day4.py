@@ -30,8 +30,8 @@ def numberOfMatches(string, char):
   matches = 0
   for c in string:
     if (c == char): matches += 1
-    else: break;
-  return matches;
+    else: break
+  return matches
 
 def safeGet(string, i):
   try:
