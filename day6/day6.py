@@ -78,7 +78,7 @@ def findNode(id, node):
 def addChild(tree, parentId, childId):
   parentNode = findNode(parentId, tree)
   if (not parentNode):
-    raise Exception('No parent node found for {}'.formta(parentId))
+    raise Exception('No parent node found for {}'.format(parentId))
   child = Node(childId, parentNode)
   parentNode.children.append(child)
   return child
